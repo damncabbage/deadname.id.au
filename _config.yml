@@ -1,0 +1,20 @@
+# Site settings
+title: "That Damn Cabbage"
+author: "Rob Howard"
+email: "rob@robhoward.id.au"
+
+description: >
+  Blog and portfolio nexus for Rob Howard, esteemed programmer twit.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://robhoward.id.au" # the base hostname & protocol for your site
+permalink: "/blog/:year/:month/:title/" # Compatibility with previous Jekyll 0.x site
+
+twitter_username: "damncabbage"
+github_username:  "damncabbage"
+
+# Build settings
+markdown: "kramdown"
+
+# Avoid picking up the template posts inside the jekyll gem itself.
+exclude: ["vendor"]

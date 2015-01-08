@@ -182,18 +182,19 @@
         margin-bottom: 0;
     }
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit * 0.7;
     }
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $base-font-size * 0.8;
     color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $base-font-size * 1.3;
+    line-height: 1;
 }
 
 

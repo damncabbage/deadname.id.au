@@ -4,7 +4,7 @@ author: "Rob Howard"
 email: "rob@robhoward.id.au"
 
 description: >
-  Blog and portfolio nexus for Rob Howard, esteemed Ruby/Haskell-using programmer nitwit.
+  Blog and portfolio nexus for Rob Howard, esteemed Ruby/Haskell/JavaScript-using programmer nitwit.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://robhoward.id.au" # the base hostname & protocol for your site
@@ -12,6 +12,7 @@ permalink: "/blog/:year/:month/:title/" # Compatibility with previous Jekyll 0.x
 
 twitter_username: "damncabbage"
 github_username:  "damncabbage"
+speakerdeck_username: "damncabbage"
 
 # Build settings
 markdown: "redcarpet" # was: "kramdown"

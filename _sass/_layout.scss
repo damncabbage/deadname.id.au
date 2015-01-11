@@ -188,6 +188,9 @@
     font-size: 20px;
 }
 
+#posts, #talks, #projects {
+    margin-top: $spacing-unit;
+}
 .post-list {
     margin-left: 0;
     list-style: none;

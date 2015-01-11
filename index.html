@@ -5,19 +5,54 @@ landmark: home
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <p>Hi! I'm Rob Howard. I <a href="https://github.com/damncabbage">mess around</a> with Ruby, Haskell and JavaScript, and sometimes like to scribble things down and <a href="https://speakerdeck.com/damncabbage">talk at people</a>. I get paid to write code and run up large hosting bills at <a href="https://orionvm.com.au">OrionVM</a>.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
-      </li>
-    {% endfor %}
-  </ul>
+  <section id="posts">
+    <h1 class="page-heading">Posts</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <ul id="post-list" class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% if site.talks %}
+  <section id="talks">
+    <h1 class="page-heading">Talks</h1>
+    <ul id="post-list" class="post-list">
+      {% for post in site.talks %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if site.talks %}
+  <section id="projects">
+    <h1 class="page-heading">Projects</h1>
+    <ul id="post-list" class="post-list">
+      {% for post in site.projects %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -20,3 +20,11 @@ highlighter: "pygments"
 
 # Avoid picking up the template posts inside the jekyll gem itself.
 exclude: ["vendor"]
+
+collections:
+  talks:
+    output: true
+    permalink: "/talks/:path/" # /talks/2015/02/foo_bar_baz/
+
+  # TODO:
+  #projects:

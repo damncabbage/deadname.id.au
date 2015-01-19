@@ -29,7 +29,7 @@ landmark: home
       {% for post in site.talks %}
         <li>
           <h2>
-            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>
           </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
         </li>
@@ -38,7 +38,7 @@ landmark: home
   </section>
   {% endif %}
 
-  {% if site.talks %}
+  {% if site.projects %}
   <section id="projects">
     <h1 class="page-heading">Projects</h1>
     <ul id="post-list" class="post-list">
@@ -53,6 +53,8 @@ landmark: home
   </section>
   {% endif %}
 
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!--
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  -->
 
 </div>

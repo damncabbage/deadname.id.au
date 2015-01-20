@@ -7,6 +7,10 @@ comments: true
 categories:
 - ruby
 - safety
+thumbnail_url: "/talks/2014/11/rubys-outer-limits.jpg"
+twitter_card: "summary"
+excerpt: |
+  A talk about Ruby's frustrations and limitations we run into as we try to build and maintain larger apps.
 ---
 
 <a class="pdf" href="/talks/2014/11/rubys-outer-limits.pdf">

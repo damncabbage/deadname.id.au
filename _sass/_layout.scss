@@ -266,4 +266,9 @@
             font-size: 18px;
         }
     }
+
+    .pdf {
+        font-weight: 400;
+        letter-spacing: 0.1px; // Needs a better body copy font; this one has little tolerance for bolding without looking dumb.
+    }
 }

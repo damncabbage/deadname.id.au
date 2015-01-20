@@ -268,7 +268,12 @@
     }
 
     .pdf {
+        display: block;
+        text-align: center;
         font-weight: 400;
         letter-spacing: 0.1px; // Needs a better body copy font; this one has little tolerance for bolding without looking dumb.
+        margin-bottom: $spacing-unit;
+        img { margin-bottom: $spacing-unit / 3; }
+        span { display: block; }
     }
 }

@@ -9,7 +9,10 @@ categories:
 - safety
 ---
 
-<a class="pdf" href="/talks/2014/11/rubys-outer-limits.pdf">Talk Slides+Notes PDF (1.4MB)</a>
+<a class="pdf" href="/talks/2014/11/rubys-outer-limits.pdf">
+  <img src="/talks/2014/11/rubys-outer-limits.jpg" />
+  <span>Talk Slides+Notes PDF (1.4MB)</span>
+</a>
 
 *"Ruby's Outer Limits", previously "Ruby is Doomed": a talk (with an overly dramatic title) about Ruby's frustrations and limitations we run into as we try to build and maintain larger apps.*
 

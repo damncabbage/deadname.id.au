@@ -26,7 +26,7 @@ landmark: home
   <section id="talks">
     <h1 class="page-heading">Talks</h1>
     <ul id="post-list" class="post-list">
-      {% for post in site.talks %}
+      {% for post in site.talks reversed %}
         <li>
           <h2>
             <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>

@@ -23,7 +23,7 @@ excerpt: |
 The excellent talks mentioned:
 
 * [Blending Functional and OO Programming in Ruby](https://speakerdeck.com/solnic/blending-functional-and-oo-programming-in-ruby) (Piotr Solnica)
-* [Currying, Composition and You](http://www.parsonsmatt.org/currb/#/7) (Matt Parsons)
+* [Currying, Composition, and You](http://www.parsonsmatt.org/currb/#/7) (Matt Parsons)
 * [Functional Composition](http://www.infoq.com/presentations/music-functional-language) (Chris Ford)
 
 And the worked example of `>>` and `<<` for Procs, with specs:

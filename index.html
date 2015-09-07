@@ -7,21 +7,6 @@ landmark: home
 
   <p>Hi! I'm Rob Howard. I <a href="https://github.com/damncabbage">mess around</a> with Ruby, Haskell and JavaScript, and sometimes like to scribble things down and <a href="https://speakerdeck.com/damncabbage">talk at people</a>. I get paid to write code and run up large hosting bills at <a href="https://orionvm.com.au">OrionVM</a>.</p>
 
-  <section id="posts">
-    <h1 class="page-heading">Posts</h1>
-
-    <ul id="post-list" class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-
   {% if site.talks %}
   <section id="talks">
     <h1 class="page-heading">Talks</h1>
@@ -52,6 +37,20 @@ landmark: home
     </ul>
   </section>
   {% endif %}
+
+  <section id="posts">
+    <h1 class="page-heading">Posts</h1>
+    <ul id="post-list" class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
   <!--
     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

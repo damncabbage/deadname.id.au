@@ -6,7 +6,7 @@ date: "2015-06-15 15:00"
 comments: true
 categories:
 - ruby
-- blocks
+- testing
 thumbnail_url: "/talks/2015/06/property-based-testing.png"
 twitter_card: "summary"
 excerpt: |

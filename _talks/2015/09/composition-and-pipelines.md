@@ -14,7 +14,7 @@ excerpt: |
 ---
 
 <a class="pdf" href="/talks/2015/09/composition-and-pipelines.pdf">
-  <img src="/talks/2015/09/composition-and-pipelines.png" />
+  <iframe src="https://player.vimeo.com/video/138642247?byline=0&portrait=0" width="500" height="376" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <span>Talk Slides PDF (0.6MB)</span>
 </a>
 

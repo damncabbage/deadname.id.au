@@ -13,6 +13,7 @@ GEM
       timers (~> 4.0.0)
     classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
+    coderay (1.1.0)
     coffee-script (2.3.0)
       coffee-script-source
       execjs
@@ -124,6 +125,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coderay
   github-pages
   jekyll (~> 2.0)
   rake

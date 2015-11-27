@@ -15,12 +15,16 @@ github_username:  "damncabbage"
 speakerdeck_username: "damncabbage"
 
 # Build settings
-markdown: "redcarpet" # was: "kramdown"
-redcarpet:
-    extensions:
-    - "with_toc_data" # Auto-add IDs to headings
+markdown: "kramdown" # was: "redcarpet" # was: "kramdown"
+kramdown:
+  input: "GFM"
+  syntax_highlighter: "coderay"
+  coderay_line_numbers: nil
+#highlighter: "coderay"
+#redcarpet:
+#  extensions:
+#  - "with_toc_data" # Auto-add IDs to headings
 
-highlighter: "pygments"
 
 # Avoid picking up the template posts inside the jekyll gem itself.
 exclude: ["vendor"]

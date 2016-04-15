@@ -10,6 +10,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://robhoward.id.au" # the base hostname & protocol for your site
 permalink: "/blog/:year/:month/:title/" # Compatibility with previous Jekyll 0.x site
 
+future: true # include content marked with a date in the future
+
 twitter_username: "damncabbage"
 github_username:  "damncabbage"
 speakerdeck_username: "damncabbage"

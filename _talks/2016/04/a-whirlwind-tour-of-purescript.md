@@ -13,7 +13,7 @@ excerpt: |
   A PureScript talk and workshop, introducing it with a small game that we'll build piece by piece, from simple functions to a web-based app, giving you a chance to try out features and libraries along the way.
 ---
 
-_The following is being given at [YOW! Lambda Jam 2016](http://lambdajam.yowconference.com.au/) on 28–29 April. I hope to see you all there! 😊_
+_The following is being given at [YOW! Lambda Jam 2016](http://lambdajam.yowconference.com.au/) on 28–29 April. I hope to see you all there!_ 😊
 
 This talk and workshop/jam will introduce you to PureScript, a strongly-typed, Haskell-inspired programming language that compiles to JavaScript. These sessions will focus on building a small game in incremental steps, from simple functions to a web-based app, giving you a chance to try out features and libraries along the way. You should leave the session with a grasp of PureScript fundamentals, and a self-sufficiency to tackle your own projects and experiments.
 

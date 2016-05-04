@@ -13,7 +13,9 @@ excerpt: |
   A PureScript talk and workshop, introducing it with a small game that we'll build piece by piece, from simple functions to a web-based app, giving you a chance to try out features and libraries along the way.
 ---
 
-_The following is being given at [YOW! Lambda Jam 2016](http://lambdajam.yowconference.com.au/) on 28–29 April. I hope to see you all there!_ 😊
+> The following was given at [YOW! Lambda Jam 2016](http://lambdajam.yowconference.com.au/) on 28–29 April. Thank you all who attended. 😊
+>
+> The material for the workshop (which includes the game I presented during the talk) is available on my GitHub profile: [https://github.com/damncabbage/ylj16-workshop](https://github.com/damncabbage/ylj16-workshop)
 
 This talk and workshop/jam will introduce you to PureScript, a strongly-typed, Haskell-inspired programming language that compiles to JavaScript. These sessions will focus on building a small game in incremental steps, from simple functions to a web-based app, giving you a chance to try out features and libraries along the way. You should leave the session with a grasp of PureScript fundamentals, and a self-sufficiency to tackle your own projects and experiments.
 
@@ -26,7 +28,7 @@ Talk Prerequisites:
 Workshop/Jam Prerequisites:
 
 * Hardware: a computer capable of running a provided VirtualBox VM, with ~15GB disk space to allow for a VM image, and at least a spare 1GB RAM for running the same.
-* At least a familiarity with both Haskell and JavaScript; a little is fine, but none of either will leave you lost.
+* At least a passing familiarity with both Haskell and JavaScript; a little is fine, but absolutely none of either will leave you lost.
 
 
 Useful Extras:

@@ -13,10 +13,12 @@ excerpt: |
   Composing a program out of smaller parts; function composition and pipelines.
 ---
 
-<a class="pdf" href="/talks/2015/09/composition-and-pipelines.pdf">
+<div class="pdf">
   <iframe src="https://player.vimeo.com/video/138642247?byline=0&portrait=0" width="500" height="376" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <span>Talk Slides PDF (0.6MB)</span>
-</a>
+  <a href="/talks/2015/09/composition-and-pipelines.pdf">
+    <span>Talk Slides PDF (0.6MB)</span>
+  </a>
+</div>
 
 *Composing a program out of smaller parts; function composition and pipelines.*
 

@@ -13,10 +13,12 @@ excerpt: |
   A different way of testing, putting your tests to work for you.
 ---
 
-<a class="pdf" href="/talks/2015/06/property-based-testing.pdf">
+<div class="pdf">
   <iframe src="https://player.vimeo.com/video/130847897?byline=0&portrait=0" width="500" height="376" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <span>Talk Slides PDF (0.1MB)</span>
-</a>
+  <a href="/talks/2015/06/property-based-testing.pdf">
+    <span>Talk Slides PDF (0.1MB)</span>
+  </a>
+</div>
 
 *A different way of testing, putting your tests to work for you.*
 

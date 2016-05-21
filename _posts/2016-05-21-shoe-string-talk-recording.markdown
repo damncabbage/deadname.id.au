@@ -31,3 +31,5 @@ Some previous done-with-Screenflick examples of mine, for reference:
   (I'm less happy with this because I tried to merge two audio streams and I got a bit of an echo out of it towards the end; I unfortunately lost the originals to a disk failure.)
 
 If anyone else is trying this, and have suggestions and tips, I'd love to [hear from you](https://twitter.com/damncabbage). 😀
+
+PS: A phone? Yes; it's not tied to the machine giving the presentation, meaning it's not going to pick up keystrokes so much, and it's going to keep working even if your machine has trouble mid-presentation, like my machine did trying to use Keynote to record the _Composition and Pipelines_ talk above.

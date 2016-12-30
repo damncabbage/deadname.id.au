@@ -5,8 +5,9 @@ venue: "Railscamp 2014"
 date: "2014-11-15 14:30"
 comments: true
 categories:
-- ruby
-- safety
+- Meetup
+- Ruby
+- Safety
 thumbnail_url: "/talks/2014/11/rubys-outer-limits.jpg"
 twitter_card: "summary"
 excerpt: |

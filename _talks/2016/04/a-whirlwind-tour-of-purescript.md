@@ -5,8 +5,9 @@ venue: "YOW! Lambda Jam 2016"
 date: "2016-04-28 10:00"
 comments: true
 categories:
-- purescript
-- functional
+- Conference
+- PureScript
+- Functional
 thumbnail_url: "/talks/2016/04/a-whirlwind-tour-of-purescript.png"
 twitter_card: "summary"
 excerpt: |

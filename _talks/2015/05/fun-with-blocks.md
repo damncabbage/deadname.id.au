@@ -5,8 +5,9 @@ venue: "Rorosyd 2015"
 date: "2015-05-12 19:00"
 comments: true
 categories:
-- ruby
-- blocks
+- Meetup
+- Ruby
+- Blocks
 thumbnail_url: "/talks/2015/05/fun-with-blocks.jpg"
 twitter_card: "summary"
 excerpt: |

@@ -5,8 +5,9 @@ venue: "Rorosyd 2015"
 date: "2015-09-08 19:00"
 comments: true
 categories:
-- ruby
-- functional
+- Meetup
+- Ruby
+- Functional
 thumbnail_url: "/talks/2015/09/composition-and-pipelines.png"
 twitter_card: "summary"
 excerpt: |

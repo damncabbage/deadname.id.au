@@ -5,8 +5,9 @@ venue: "Railscamp Sydney, 2015"
 date: "2015-06-15 15:00"
 comments: true
 categories:
-- ruby
-- testing
+- Meetup
+- Ruby
+- Testing
 thumbnail_url: "/talks/2015/06/property-based-testing.png"
 twitter_card: "summary"
 excerpt: |

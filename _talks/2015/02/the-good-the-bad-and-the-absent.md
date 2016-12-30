@@ -5,8 +5,9 @@ venue: "Rorosyd 2015"
 date: "2015-02-10 19:00"
 comments: true
 categories:
-- ruby
-- safety
+- Meetup
+- Ruby
+- Safety
 thumbnail_url: "/talks/2015/02/the-good-the-bad-and-the-absent.png"
 twitter_card: "summary"
 excerpt: |

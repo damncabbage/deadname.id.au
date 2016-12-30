@@ -5,8 +5,9 @@ venue: "Rorosyd, 2016"
 date: "2016-05-10 19:30"
 comments: true
 categories:
-- ruby
-- testing
+- Meetup
+- Ruby
+- Testing
 thumbnail_url: "/talks/2016/05/catching-the-bugs-youre-missing.png"
 twitter_card: "summary"
 excerpt: |

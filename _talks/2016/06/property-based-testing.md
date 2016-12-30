@@ -5,8 +5,9 @@ venue: "CampJS, 2016"
 date: "2016-06-04 12:30"
 comments: true
 categories:
-- javascript
-- testing
+- Meetup
+- Javascript
+- Testing
 thumbnail_url: "/talks/2016/06/property-based-testing.png"
 twitter_card: "summary"
 excerpt: |

@@ -54,4 +54,6 @@ This is a talk that I primarily gave at [Web Directions Code 2016](http://www.we
 
 Big thanks to [John Allsopp](https://twitter.com/johnallsopp) and the [Web Directions](http://webdirections.org) team for giving me the opportunity to speak at Code, to [Mark Dalgleish](https://twitter.com/markdalgleish) for inviting me to MelbJS, to [@strawz](https://twitter.com/strawz) for recording my SydJS draft run, and to everyone who attended. 😊
 
+The talk video itself is currently behind a [pay-for-access portal](http://webdirections.org/code16/#register), but may be released publicly by Web Directions in the future.
+
 <small>(First photo courtesy of [Web Directions](https://www.webdirections.org/); the second thanks to [James Sinclair](http://jrsinclair.com/).)</small>

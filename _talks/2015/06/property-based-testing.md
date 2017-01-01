@@ -4,6 +4,7 @@ title: "Property-Based Testing"
 venue: "Railscamp Sydney, 2015"
 date: "2015-06-15 15:00"
 comments: true
+listed: false
 categories:
 - Meetup
 - Ruby

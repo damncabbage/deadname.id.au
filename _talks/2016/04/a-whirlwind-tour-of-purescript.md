@@ -4,6 +4,7 @@ title: "A Whirlwind Tour of PureScript"
 venue: "YOW! Lambda Jam 2016"
 date: "2016-04-28 10:00"
 comments: true
+listed: true
 categories:
 - Conference
 - PureScript

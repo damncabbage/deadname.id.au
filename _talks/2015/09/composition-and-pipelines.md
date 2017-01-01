@@ -4,6 +4,7 @@ title: "Composition and Pipelines"
 venue: "Rorosyd 2015"
 date: "2015-09-08 19:00"
 comments: true
+listed: true
 categories:
 - Meetup
 - Ruby

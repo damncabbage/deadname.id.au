@@ -4,6 +4,7 @@ title: "The Good, the Bad and the Absent"
 venue: "Rorosyd 2015"
 date: "2015-02-10 19:00"
 comments: true
+listed: true
 categories:
 - Meetup
 - Ruby

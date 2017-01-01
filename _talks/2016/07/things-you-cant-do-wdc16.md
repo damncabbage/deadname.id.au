@@ -4,6 +4,7 @@ title: "The Things You Can't Do"
 venue: "Web Directions Code, 2016"
 date: "2016-07-10 12:30"
 comments: true
+listed: true
 categories:
 - Conference
 - JavaScript

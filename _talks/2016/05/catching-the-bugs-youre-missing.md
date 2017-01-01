@@ -4,6 +4,7 @@ title: "Catching the Bugs You're Missing"
 venue: "Rorosyd, 2016"
 date: "2016-05-10 19:30"
 comments: true
+listed: false
 categories:
 - Meetup
 - Ruby

@@ -4,6 +4,7 @@ title: "Property-Based Testing: Catching the Bugs You're Missing"
 venue: "CampJS, 2016"
 date: "2016-06-04 12:30"
 comments: true
+listed: true
 categories:
 - Meetup
 - Javascript
@@ -25,7 +26,7 @@ excerpt: |
 >
 > A testing approach called Property-Based Testing lets you lean on the computer to help you write better, more thorough tests. What are property tests, what are they good for, and how do you write them? Come along and learn how to make the your tests really work for you.
 
-This is a retooled version of a couple of [past](/talks/2015/06/property-based-testing) [versions](/talks/2016/05/catching-the-bugs-youre-missing) of a property-based testing talk. I'm considering this the last version of this talk, and probably won't give it again.
+This is a retooled version of a property-based testing talk I've previously given (at a [Sydney Railscamp](/talks/2015/06/property-based-testing) and the [Sydney Ruby meetup](/talks/2016/05/catching-the-bugs-youre-missing)); I'm considering this the last version of this talk, and probably won't give it again.
 
 (There are a couple of silly errors that I've since fixed in the slides PDF, eg. `add(-1,0) === 1` showing up near the bottom of the screen, but they're not major. 😅 )
 

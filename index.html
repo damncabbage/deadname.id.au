@@ -12,12 +12,14 @@ landmark: home
     <h1 class="page-heading">Talks</h1>
     <ul id="post-list" class="post-list">
       {% for post in site.talks reversed %}
-        <li>
-          <h2>
-            <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>
-          </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
-        </li>
+        {% if post.listed %}
+          <li>
+            <h2>
+              <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>
+            </h2>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </section>

@@ -4,6 +4,7 @@ title: "Ruby's Outer Limits"
 venue: "Railscamp 2014"
 date: "2014-11-15 14:30"
 comments: true
+listed: true
 categories:
 - Meetup
 - Ruby

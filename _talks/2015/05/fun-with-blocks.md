@@ -4,6 +4,7 @@ title: "Fun with Blocks"
 venue: "Rorosyd 2015"
 date: "2015-05-12 19:00"
 comments: true
+listed: true
 categories:
 - Meetup
 - Ruby

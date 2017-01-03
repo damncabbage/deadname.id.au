@@ -14,7 +14,7 @@ categories:
 
 Ansible has a hash-in-a-string format that, in the docs, may be better known as ["key=value" options for module actions](http://docs.ansible.com/playbooks_intro.html#tasks-list). They look a bit like this:
 
-``` YAML
+```yaml
 tasks:
 - name: make sure apache is running
   service: name=httpd state=running
@@ -24,7 +24,7 @@ Every playbook file is a YAML file; what we have above is a list of one task has
 
 Formatted properly, the above looks like:
 
-``` yaml
+```yaml
 tasks:
 - name: "make sure apache is running"
   service: "name=httpd state=running"
@@ -37,7 +37,7 @@ What's going on is that Ansible has [its own key=value parser that it runs over 
 
 This is fine and dandy if you have plain arguments, but as is common in Ansible, you often want to interpolate in variables. Here's a simple example:
 
-``` yaml
+```yaml
 tasks:
 - name: "Install basic packages"
   apt: pkg={{ "{{ item "}}}} state=installed
@@ -54,7 +54,7 @@ tasks:
 
 Here's a [not-so-simple example](https://github.com/ansible/ansible/issues/9067):
 
-``` yaml
+```yaml
 tasks:
 - copy: "dest=/tmp/1.txt content={{ "{{ contains_quote "}}}}"
 # ^-- Broken; interpreted as:
@@ -84,7 +84,7 @@ Same goes for things like `campfire: room=example subscription=example token=exa
 
 Stick to using YAMLs own features for structured data; use a hash:
 
-``` yaml
+```yaml
 tasks:
 - name: "Long-form Hash"
   service:
@@ -97,7 +97,7 @@ tasks:
 
 And if you're using something like [shell](http://docs.ansible.com/shell_module.html) or [command](http://docs.ansible.com/command_module.html) that expect a string *and* `key=value` arguments (eg. `shell: "something --file /home/foo/bar.txt creates=/home/foo/bar.txt"`), you can instead provide an `args` key:
 
-``` yaml
+```yaml
 tasks:
 - name: "A complicated command meant to only run once, which leaves a file around when it's finished."
   shell: "something --file /home/foo/bar.txt -o -m -g"

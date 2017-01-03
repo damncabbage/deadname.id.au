@@ -20,7 +20,7 @@ speakerdeck_username: "damncabbage"
 markdown: "kramdown" # was: "redcarpet" # was: "kramdown"
 kramdown:
   input: "GFM"
-  syntax_highlighter: "coderay"
+  syntax_highlighter: "rouge"
   coderay_line_numbers: nil
 #highlighter: "coderay"
 #redcarpet:

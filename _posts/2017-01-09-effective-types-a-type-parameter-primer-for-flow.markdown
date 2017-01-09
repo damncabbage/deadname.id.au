@@ -30,7 +30,7 @@ Say we have this:
 
 ```ts
 function doubleIt(x) {
-  return x + 1;
+  return x + x;
 }
 ```
 

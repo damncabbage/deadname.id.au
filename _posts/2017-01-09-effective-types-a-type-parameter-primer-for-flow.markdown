@@ -34,7 +34,7 @@ function doubleIt(x) {
 }
 ```
 
-This is a function, `doubleIt`, which has a "parameter", `x`. We **use** a function by providing values for its function parameters:
+This is a function, `doubleIt`, which has a "parameter", `x`. We **call** a function by providing values for its function parameters:
 
 ```javascript
 const result = doubleIt(5);

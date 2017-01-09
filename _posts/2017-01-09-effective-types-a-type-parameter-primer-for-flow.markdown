@@ -37,7 +37,7 @@ function doubleIt(x) {
 This is a function, `doubleIt`, which has a "parameter", `x`. We **use** a function by providing values for its function parameters:
 
 ```javascript
-const result = doubleIt(9);
+const result = doubleIt(5);
 
 // ... is like taking this:
 function doubleIt(x) {
@@ -45,8 +45,8 @@ function doubleIt(x) {
 }
 
 // ... is like subbing in the variables like this:
-function doubleIt(9) {
-  return 9 + 9;
+function doubleIt(5) {
+  return 5 + 5;
 }
 
 // ... to get a value: 10;

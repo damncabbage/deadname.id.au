@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective Types: Type Parameters, a Friendly Primer (for Flow)"
+title: "Effective Types: Type Parameters, a Friendly Primer (Flow)"
 date: "2017-01-01 18:57"
 published: true
 categories:
@@ -151,8 +151,8 @@ As is the goal with much of what we do with Flow, the more restricted we can mak
 I'm going to leave you with some examples of parameterised types that I've found useful. I'm [interested to hear](https://twitter.com/damncabbage) what other combos you come up with. 😊
 
 ```ts
-// This is Flow's ? symbol, eg. Nullish<string> is ?string.
-type Nullish<X> = X | null | undefined;
+// This is Flow's ? symbol, eg. Q<string> is ?string.
+type Q<X> = X | null | undefined;
 
 
 // This is a function that returns a Promise; we've used Flow
@@ -195,4 +195,4 @@ PS: One last note, on terminology. In case you run into this in future, the conc
 
 <small id="note-1">1. Flow has an (unfortunate? intentionally designed?) backdoor that lets you figure out what the items are; I'll be covering this in the next post.</small>
 
-<small id="note-2">2. Flow and TypeScript both let through code that breaks parametricity, which is why I'm reluctant to use the term; there's some back and forth on the topic on [this Gist](https://gist.github.com/raichoo/b5d2534c18eadbf9da8b).</small> 
+<small id="note-2">2. Flow and TypeScript both let through code that breaks parametricity, which is why I'm reluctant to use the term; there's some back and forth on the topic on [this Gist](https://gist.github.com/raichoo/b5d2534c18eadbf9da8b).</small>

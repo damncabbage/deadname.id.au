@@ -10,7 +10,7 @@ categories:
 - JavaScript
 ---
 
-Here's something you might have seen before:
+Let's kick this off with a couple of type declarations:
 
 ```javascript
 // @flow
@@ -19,11 +19,10 @@ type StringOrNumber = string | number;
 type Optional<X> = X | null;
 ```
 
-We've declared two types:
+We have:
 
 * A type `StringOrNumber` that represents a value that could be any number, or any string, but nothing else.
 * A more general type, `Optional<X>`. It represents either something (the `X`; we haven't specified what yet), or `null`, but nothing else.
-* `Optional<X>` is "more general" because it refers to a potentially greater range of types (the aforementioned something), as opposed to the "more specialised" `StringOrNumber` which only refers to strings and numbers specifically.
 
 We call this `X` a "type parameter". The `X` isn't a special name: it could be `T`, or `Item`, or `Thing` for all we care. We'll dig into what a "type parameter" actually means a little bit later, but first let's switch gears and think about functions for a moment.
 
@@ -35,7 +34,7 @@ function doubleIt(x) {
 }
 ```
 
-This is a function, `doubleIt`, which has a **parameter**, `x`. We *use* a function by providing values for its function parameters:
+This is a function, `doubleIt`, which has a "parameter", `x`. We **use** a function by providing values for its function parameters:
 
 ```javascript
 const result = doubleIt(9);

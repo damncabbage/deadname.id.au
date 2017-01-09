@@ -12,7 +12,7 @@ categories:
 
 Let's kick this off with a couple of type declarations:
 
-```javascript
+```ts
 // @flow
 
 type StringOrNumber = string | number;
@@ -28,7 +28,7 @@ We call this `X` a "type parameter". The `X` isn't a special name: it could be `
 
 Say we have this:
 
-```javascript
+```ts
 function doubleIt(x) {
   return x + 1;
 }
@@ -36,7 +36,7 @@ function doubleIt(x) {
 
 This is a function, `doubleIt`, which has a "parameter", `x`. We **call** a function by providing values for its function parameters:
 
-```javascript
+```ts
 const result = doubleIt(5);
 
 // ... is like taking this:
@@ -54,7 +54,7 @@ function doubleIt(5) {
 
 In the same way, we can **specialise** a type, by providing types for its type parameters:
 
-```javascript
+```ts
 type OptionalNumber = Optional<number>;
 
 // ... is like taking this:
@@ -80,7 +80,7 @@ Multiple parameters are supported too, eg. `type Post<ID,Title> = { id: ID, titl
 
 Moving on. These type parameters work with a variety of things, eg. functions:
 
-```javascript
+```ts
 // A function that takes a T, and returns a value of that same type.
 function justReturn<T>(x: T): T {
   return x;
@@ -96,7 +96,7 @@ function justReturn<string>(x: string): string {
 
 Or:
 
-```javascript
+```ts
 function first<X>(items: Array<X>): Optional<X> {
   if (0 in items) {
     return items[0];
@@ -122,7 +122,7 @@ Notice something about `first`? We never looked at the contents of the items, on
 
 Take this last example:
 
-```javascript
+```ts
 function first<X>(items: Array<X>): Optional<X> {
   if (0 in items) {
     // Add 100 to each array item. But what is the type of item? We don't
@@ -150,7 +150,7 @@ As is the goal with much of what we do with Flow, the more restricted we can mak
 
 I'm going to leave you with some examples of parameterised types that I've found useful. I'm [interested to hear](https://twitter.com/damncabbage) what other combos you come up with. 😊
 
-```javascript
+```ts
 // This is Flow's ? symbol, eg. Nullish<string> is ?string.
 type Nullish<X> = X | null | undefined;
 

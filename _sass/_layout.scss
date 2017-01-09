@@ -196,6 +196,7 @@
     list-style: none;
 
     h2 {
+        margin-top: 0;
         margin-bottom: 0;
     }
     > li {
@@ -233,7 +234,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     text-indent: -1px;
-    line-height: 1;
+    line-height: 1.2;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -242,6 +243,13 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    ul, ol {
+      margin-bottom: $spacing-unit / 1;
+      li {
+        margin-bottom: 3px;
+      }
+    }
 
     h2 {
         font-size: 32px;
@@ -265,6 +273,15 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    hr {
+      max-width: 50%;
+      margin: ($spacing-unit * 1.5) auto;
+      height: 0;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #cfcfcf;
     }
 
     .pdf {

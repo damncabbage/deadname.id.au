@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective Types: Type Parameters, a Friendly Primer (Flow)"
+title: "Effective Types: Parameterised Types, a Friendly Primer (Flow)"
 date: "2017-01-01 18:57"
 published: true
 categories:
@@ -10,17 +10,21 @@ categories:
 - JavaScript
 ---
 
-Let's kick this off with a couple of type declarations:
+_"Parameterised Types"_ are a feature of Flow, TypeScript, and a growing collection of other languages. Like functions have parameters (parameterised functions), parameterised types are a way of punching holes in type definitions, and leaving it to the user to provide specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
+
+This is a little hard to relate in a sentence or two, so let's get straight to it. Here's a few type declarations:
 
 ```ts
 // @flow
 
+type JustAString = string;
 type StringOrNumber = string | number;
 type Optional<X> = X | null;
 ```
 
 We have:
 
+* A type `JustAString` that represents a value that could be any string, but nothing else.
 * A type `StringOrNumber` that represents a value that could be any number, or any string, but nothing else.
 * A more general type, `Optional<X>`. It represents either something (the `X`; we haven't specified what yet), or `null`, but nothing else.
 
@@ -142,9 +146,9 @@ function first<X>(items: Array<X>): Optional<X> {
 //                           ^ number
 ```
 
-Our `first` function **can't**<sup>[1](#note-1)</sup> know what the items are. We already use Flow to restrict *data* to types like numbers and strings. By preventing `first` from mucking around with the items themselves, we've restricted *the function*, and having the type of the function (written out in terms of `T`) reflect that restriction.
+Our `first` function **can't**<sup>[1](#note-1)</sup> know what the items are. We already use Flow to restrict *data* to types like numbers and strings. By preventing `first` from mucking around with the items themselves, we've restricted *the function*, and having the type of the function (written out in terms of the type parameter `T`) reflect that restriction.
 
-As is the goal with much of what we do with Flow, the more restricted we can make the types of our data and functions, the fewer possibilities we need to think about when we change them, letting us focus in what we're immediately working on with fewer mistakes.
+As is the goal with much of what we do with Flow, the more restricted we can make the types of our data and functions, the fewer possibilities we need to think about when we change them, letting us focus in what we're immediately working on with fewer mistakes. Parameterised types let us do this by having us only worry about the specifics we care about (our input is an array), and not about the things we don't (it's an array of numbers).
 
 <hr />
 
@@ -188,7 +192,6 @@ type RequestData<Error,Value> =
 // this case) that prevents us from mixing up with other strings.
 class UserID extends TypeWrapper<string> {}
 ```
-
 
 PS: One last note, on terminology. In case you run into this in future, the concept of having these parameterised types is sometimes called "Generics" (see Java, C#, the Go "Generics" debate, etc), and is *mostly* like something called "Parametricity".<sup>[2](#note-2)</sup>
 

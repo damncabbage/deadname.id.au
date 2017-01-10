@@ -19,6 +19,6 @@ When I write about Ruby (or PHP, or JavaScript), I'm writing with the implicit a
 
 Any advice I give in these posts about making Ruby projects more maintainable, for example, are with the above in mind. There will always be `nil`. There will not likely be a compiler for the language in its current form. It's difficult to check things in advance without just running the code over and over with different inputs and hoping you caught everything.
 
-So with that anything I can say or write will be incremental improvements at best. I accept that. I can't just stand on the stage at [#rorosyd](http://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/) and yell about how, with the tools we use, that we can't fix all those problems that we keep trying to fix with service-class, hexagonal-design, SRP, thin-fat-dieting-model-controller-view or other self-flagellating workarounds.
+So with that anything I can say or write will be incremental improvements at best. I accept that. I can't just stand on the stage at [#rorosyd](http://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/) and yell about how, with the tools we use, that we can't fix all those problems that we keep trying to fix with service-class, hexagonal-design, SRP, thin-fat-model-controller-view and so on.
 
 And though I *do* find tools with stronger type systems very useful and very interesting, there are a lot of companies using tools *without* them doing things that I find compelling, and I enjoy making improvements there. By inches, if necessary.

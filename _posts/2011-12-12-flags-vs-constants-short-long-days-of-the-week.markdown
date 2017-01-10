@@ -9,7 +9,7 @@ categories:
 
 Here's an example: say we have a number (1) stored in a database table row, and we want to turn it into a human-readable day name, such as "Tuesday".
 
-Here was my attempt at getting it done in PHP, after checking through the arse end of the manual for the obscure date functions:
+Here was my attempt at getting it done in PHP, after checking through the end of the manual for the obscure date functions:
 
 ``` php
 // Method Signature (from http://www.php.net/manual/en/function.jddayofweek.php )

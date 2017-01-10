@@ -2,6 +2,7 @@
 layout: post
 title: "Installing Mari0 on Ubuntu 11.x / 12.x"
 date: 2012-04-15 02:31
+published: false
 comments: true
 categories:
 - Games

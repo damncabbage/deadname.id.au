@@ -10,7 +10,7 @@ categories:
 - JavaScript
 ---
 
-_"Parameterised Types"_ are a feature of Flow, TypeScript, and a growing collection of other languages. Like functions have parameters (parameterised functions), parameterised types are a way of punching holes in type definitions, and leaving it to the user to provide specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
+_"Parameterised Types"_ are a feature of Flow, TypeScript, and a growing collection of other languages. Like functions have parameters (parameterised functions), parameterised types are a way of punching holes in type definitions, and leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
 
 This is a little hard to relate in a sentence or two, so let's get straight to it. Here's a few type declarations:
 

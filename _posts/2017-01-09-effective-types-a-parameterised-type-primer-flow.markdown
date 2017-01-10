@@ -10,7 +10,9 @@ categories:
 - JavaScript
 ---
 
-_"Parameterised Types"_ are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
+_This post has been tagged with "Flow", but everything bar the final set of examples translates directly to TypeScript 2+ (with `--strictNullChecks` turned on). Also, this post has been [mirrored to Medium](https://medium.com/@damncabbage/effective-types-parameterised-types-a-friendly-primer-flow-fce991a9a191) because heck why not._
+
+"Parameterised Types" are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
 
 This is a little hard to relate in a sentence or two, so let's get straight to it. Here's a few type declarations:
 

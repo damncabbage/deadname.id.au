@@ -159,8 +159,9 @@ I'm going to leave you with some examples of parameterised types that I've found
 type Q<X> = X | null | undefined;
 
 
-// This is a function that returns a Promise; we've used Flow
-// to specify that the returned value is going to be a string.
+// This is a function that returns a Promise; we've used a type
+// parameter to specify that the returned value is going to
+// be a string.
 function fetchExampleDotCom(): Promise<string> {
   return fetch('http://example.com')
            .then(response => response.text())
@@ -169,7 +170,8 @@ function fetchExampleDotCom(): Promise<string> {
 
 // Inspired by Rust; this is either a failure or a success.
 // Coming up with a generic success/failure type like this means
-// you can write helper functions that expect
+// you can write helper functions for them, and reuse them for
+// many cases of success or failure.
 type Result<Error,Value> =
     { error: Error }
   | { value: Value }

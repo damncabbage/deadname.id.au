@@ -27,7 +27,7 @@ And this footnote:
 
 > 1. Flow has an (unfortunate? intentionally designed?) backdoor that lets you figure out what the items are; I'll be covering this in the next post.
 
-The short-but-dense version of this post: Flow's parameterised types unfortunately don't give us [parametricity](https://www.schoolofhaskell.com/school/starting-with-haskell/introduction-to-haskell/5-type-classes), both because of thing like being able to [compare anything](https://gist.github.com/raichoo/b5d2534c18eadbf9da8b) (a property of JavaScript, something that's arguably not Flow's fault), but because of Flow's own "refinements" concept which lets us inspect the type of ostensibly-opaque parameterised values.
+The short-but-dense version of this post: Flow's parameterised types unfortunately don't give us [parametricity](https://www.schoolofhaskell.com/school/starting-with-haskell/introduction-to-haskell/5-type-classes), both because of things like being able to [compare anything](https://gist.github.com/raichoo/b5d2534c18eadbf9da8b) (a property of JavaScript, something that's arguably not Flow's fault), but because of Flow's own "refinements" concept which lets us inspect the type of ostensibly-opaque parameterised values.
 
 If you have no idea what that means (and no hard feelings if you don't), let's dig into an example or two instead:
 

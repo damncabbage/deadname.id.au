@@ -40,7 +40,7 @@ const x = justReturn("hi"); // x is "hi"
 const y = justReturn(1234); // y is 1234
 ```
 
-The type signature of this function, `justReturn<X>(thing: X): X`, means to some people: "justReturn is a function, that when called with an argument of type `X` (`thing`), will return an value of type `X`". And without the ability to know what type `X` is, we can't do anything with it (call any methods, use it in any functions) or make version of `X`.
+The type signature of this function, `justReturn<X>(thing: X): X`, means to some people _"`justReturn` is a function, that when called with an argument of type `X` (`thing`), will return an value of type `X`"_. And without the ability to know what type `X` is, we can't do anything with it (call any methods, use it in any functions) or make version of `X`.
 
 Except unfortunately we can:
 
@@ -56,7 +56,9 @@ const x = justReturn("hi"); // x is "hi"
 const y = justReturn(1234); // y is 2468... Uh oh.
 ```
 
-The type signature of this function basically becomes `justReturn<X>(thing: (X | number)): (X | number)`. Using `flow type-at-pos` on `thing` inside the `if (typeof thing === "number")` branch, we see it's type is `number`. Outside that, in the other branch, it's still `X`.
+The type signature of this function basically becomes<br>`justReturn<X>(thing: (X | number)): (X | number)`.
+
+Using `flow type-at-pos` on `thing` inside the `if (typeof thing === "number")` branch, we see its type is `number`. Outside that, in the other branch, it's still `X`.
 
 Back to the very first example:
 
@@ -72,7 +74,7 @@ function first<X>(items: Array<X>): Optional<X> {
 }
 ```
 
-We can't just replace `return items[0];` with `return items[0] + 100;` – we'd have to _refine_ the value first. Then it'd quite happily work, thanks to refinements:
+We can't just replace `return items[0];` with `return items[0] + 100;` – that would explode with an error; we have to _refine_ the value first, to make sure it's a number before doing number-like things on it. Then it'd quite happily work, thanks to refinements:
 
 ```ts
 function first<X>(items: Array<X>): Optional<X> {
@@ -87,9 +89,7 @@ function first<X>(items: Array<X>): Optional<X> {
 }
 ```
 
-So suddenly `first<X>(items: Array<X>): Optional<X>
-
-This `typeof` check is a way of doing something called "Reflection", and basically means you can't trust your type signatures as much anymore.
+So suddenly `first<X>(items: Array<X>): Optional<X>` doesn't work with an opaque "Array of `X`s"; you can't rely on the fact that the `first` function doesn't know what `X` is anymore. The function has can do more, and has more power, than what it's letting on with its type signature. This `typeof` check is a way of doing something called "Reflection", and basically means you can't trust your signatures as much anymore.
 
 What can we do about it? I'm not sure.
 

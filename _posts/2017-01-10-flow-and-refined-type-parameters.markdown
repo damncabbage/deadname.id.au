@@ -97,7 +97,7 @@ What can we do about it? I'm not sure.
 
 * Alter the compiler to throw errors when refining these bare ([unbounded](https://flowtype.org/blog/2015/03/12/Bounded-Polymorphism.html)) type parameters. I don't know how commonly in use this is, though.
 
-* Leave it as it is, and trust that people will not really make use of this, or think of type signatures as advisory at most. Bummer. 😟
+* Leave it as it is, and trust that people will not really make use of this, or think of type signatures as advisory at most. [Scala allows this sort of runtime inspection, for better or for worse](http://docs.scala-lang.org/overviews/reflection/overview.html#inspecting-a-runtime-type-including-generic-types-at-runtime). But still… Bummer. 😟
 
 In any case, I'm [interested to hear](https://twitter.com/damncabbage) what people think on this topic.
 

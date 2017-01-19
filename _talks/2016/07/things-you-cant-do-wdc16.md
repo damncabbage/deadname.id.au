@@ -19,10 +19,12 @@ excerpt: |
   Flexible. Dynamic. Feature-rich. These are usually terms to describe programming languages, libraries and frameworks; they *sound* great, but what are we trading off to get them? And what can we can gain if we run in the other direction and strive for *less* of these qualities?
 ---
 
-<a class="pdf" href="/talks/2016/07/things-you-cant-do-wdc16.pdf">
-  <img src="/talks/2016/07/things-you-cant-do-wdc16.png" style="width:350px;" />
-  <span>Talk Slides PDF (0.4MB)</span>
-</a>
+<div class="hero embedded-iframe">
+  <div class="inner">
+    <iframe src="https://player.vimeo.com/video/194125263" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <p><a href="/talks/2016/07/things-you-cant-do-wdc16.pdf">Talk Slides PDF (0.4MB)</a></p>
+</div>
 
 > Flexible. Dynamic. Feature-rich. These are usually terms to describe programming languages, libraries and frameworks; they *sound* great, but what are we trading off to get them? And what can we can gain if we run in the other direction and strive for *less* of these qualities?
 >
@@ -54,7 +56,5 @@ excerpt: |
 This is a talk that I primarily gave at [Web Directions Code 2016](http://www.webdirections.org/code16/speakers/rob-howard.html), and afterwards at [MelbJS](http://melbjs.com), and beforehand (in draft form) at [SydJS](http://sydjs.com). I'm considering this the last version of this talk, and probably won't give it again.
 
 Big thanks to [John Allsopp](https://twitter.com/johnallsopp) and the [Web Directions](http://webdirections.org) team for giving me the opportunity to speak at Code, to [Mark Dalgleish](https://twitter.com/markdalgleish) for inviting me to MelbJS, to [@strawz](https://twitter.com/strawz) for recording my SydJS draft run, and to everyone who attended. 😊
-
-The talk video itself is currently behind a [pay-for-access portal](http://webdirections.org/code16/#register), but may be released publicly by Web Directions in the future.
 
 <small>(First photo courtesy of [Web Directions](https://www.webdirections.org/); the second thanks to [James Sinclair](http://jrsinclair.com/).)</small>

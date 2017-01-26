@@ -2,6 +2,7 @@
 layout: post
 title: 'Stop GNOME "Hijacking" SSH Key Entry'
 date: 2011-03-26 19:17
+listed: true
 comments: true
 categories:
 - Linux

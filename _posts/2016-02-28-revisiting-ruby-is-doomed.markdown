@@ -2,6 +2,7 @@
 layout: post
 title: 'Revisiting "Ruby is Doomed"'
 date: "2016-02-28 16:41"
+listed: false
 published: false
 categories:
 - Ruby
@@ -55,3 +56,4 @@ So what do we do? I'm not sure. Here's some ideas:
 * Look into a `Object#deep_freeze`, `Object#deep_dup`, and/or ownership transfer, as
   [Tony Arcieri suggests in this post](https://tonyarcieri.com/2012-the-year-rubyists-learned-to-stop-worrying-and-love-the-threads).
 
+* The DRY libraries

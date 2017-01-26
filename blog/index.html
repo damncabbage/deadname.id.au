@@ -8,22 +8,24 @@ layout: default
     <h1 class="page-heading">Posts</h1>
 
     <ul id="post-list" class="post-list">
-      {% for post in site.posts %}
-        <li class="post">
-          <header>
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
-          </header>
+      {% for post in site.posts reversed %}
+        {% if post.listed %}
+          <li class="post">
+            <header>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+            </header>
 
-          <article class="post-content">
-            <p>
-              {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
-              <a href="{{ post.url | prepend: site.baseurl }}">...</a>
-            </p>
-          </article>
-        </li>
+            <article class="post-content">
+              <p>
+                {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
+                <a href="{{ post.url | prepend: site.baseurl }}">...</a>
+              </p>
+            </article>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </section>

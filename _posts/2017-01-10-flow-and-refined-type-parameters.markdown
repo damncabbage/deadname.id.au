@@ -2,6 +2,7 @@
 layout: post
 title: "Flow and Refined Type Parameters"
 date: "2017-01-10 03:05"
+listed: true
 published: true
 categories:
 - Type Safety

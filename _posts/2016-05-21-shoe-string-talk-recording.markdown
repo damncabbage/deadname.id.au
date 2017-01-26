@@ -2,6 +2,7 @@
 layout: post
 title: "Shoe-String Talk Recording"
 date: "2016-05-21 17:05"
+listed: true
 published: true
 categories:
 - Talks

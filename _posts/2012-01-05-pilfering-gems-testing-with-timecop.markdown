@@ -2,6 +2,8 @@
 layout: post
 title: "Pilfering Gems: Testing With Timecop"
 date: 2012-01-05 11:32
+listed: true
+published: true
 comments: true
 categories:
 - Ruby

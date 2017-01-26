@@ -2,6 +2,8 @@
 layout: post
 title: "Flags vs Constants, and Short-Long Days of the Week"
 date: 2011-12-12 22:52
+listed: true
+published: true
 comments: true
 categories:
 - PHP

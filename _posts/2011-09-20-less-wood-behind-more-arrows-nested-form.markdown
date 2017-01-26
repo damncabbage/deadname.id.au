@@ -2,9 +2,10 @@
 layout: post
 title: "Less wood behind more arrows: nested_form"
 date: 2011-09-20 20:15
-published: false
+listed: false
+published: true
 comments: true
-categories: 
+categories:
 - Ruby
 - Rails
 - Forms

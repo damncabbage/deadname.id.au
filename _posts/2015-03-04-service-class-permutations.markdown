@@ -2,6 +2,7 @@
 layout: post
 title: "Service Class Permutations"
 date: "2015-03-04 00:02"
+listed: false
 published: false
 categories:
 - Ruby

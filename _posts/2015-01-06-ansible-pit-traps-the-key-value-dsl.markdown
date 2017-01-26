@@ -2,6 +2,8 @@
 layout: post
 title: 'Ansible Pit-Traps: The Hash-in-a-String DSL'
 date: 2015-01-06 23:22
+listed: false
+published: true
 comments: true
 categories:
 - Ansible

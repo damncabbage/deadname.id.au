@@ -321,6 +321,9 @@
 
     .hero.embedded-iframe {
       max-width: 90%;
+    }
+
+    .embedded-iframe {
       margin: 0 auto;
       .inner {
         position: relative;
@@ -332,5 +335,38 @@
         width: 100%;
         height: 100%;
       }
+    }
+
+    .talks-showcase {
+      margin-left: 0;
+      display: block;
+      list-style: none;
+      h2 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        font-size: $base-font-size * 1.2;
+        line-height: 1.2;
+      }
+      & > li {
+        margin-bottom: 3em;
+      }
+    }
+    @media screen and (min-width: $on-laptop) {
+      .talks-showcase .talk--thumbnail,
+      .talks-showcase .talk--text {
+        vertical-align: top;
+        display: inline-block;
+        width: 47%;
+        h2 { margin-top: 0; }
+      }
+      & > li {
+        margin-bottom: 2em;
+      }
+    }
+    .talks-showcase .talk--text {
+      padding-left: 10px;
+    }
+    .talks-showcase .talk--thumbnail .embedded-iframe {
+      width: 100%;
     }
 }

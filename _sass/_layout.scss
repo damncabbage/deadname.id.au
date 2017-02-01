@@ -251,9 +251,13 @@
       }
     }
 
+    h2 + h3 {
+      margin-top: $spacing-unit / 2;
+    }
+
     h2 {
       font-weight: 400;
-      font-size: 26px;
+      font-size: 30px;
     }
 
     h3 {

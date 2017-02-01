@@ -194,7 +194,7 @@ type RequestData<Error,Value> =
 // type RemoteTodoItems = RequestData<string, Array<TodoItem>>;
 
 
-// Something from the next post. :)
+// Something from the next post (http://robhoward.id.au/blog/2017/01/effective-types-type-wrappers-with-flow/)
 // This lets us create a named wrapper around string (for User IDs, in
 // this case) that prevents us from mixing up with other strings.
 class UserID extends TypeWrapper<string> {}
@@ -203,6 +203,6 @@ class UserID extends TypeWrapper<string> {}
 PS: One last note, on terminology. In case you run into this in future, the concept of having these parameterised types is sometimes called "Generics" (see Java, C#, the Go "Generics" debate, etc), and is *mostly* like something called "Parametricity".<sup>[2](#note-2)</sup>
 
 
-<small id="note-1">1. Flow has an (unfortunate? intentionally designed?) backdoor that lets you figure out what the items are; I'll be covering this in the next post. (Update: [now posted](/blog/2017/01/flow-and-refined-type-parameters/).)</small>
+<small id="note-1">1. Flow has an (unfortunate? intentionally designed?) backdoor that lets you figure out what the items are; I've covered this in [another post](/blog/2017/01/flow-and-refined-type-parameters/).</small>
 
 <small id="note-2">2. Flow and TypeScript both let through code that breaks parametricity, which is why I'm reluctant to use the term; there's some back and forth on the topic on [this Gist](https://gist.github.com/raichoo/b5d2534c18eadbf9da8b).</small>

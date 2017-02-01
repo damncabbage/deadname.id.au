@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective Types: Parameterised Types, a Friendly Primer (Flow)"
+title: "Effective Types: Parameterised Types, a Friendly Primer (Flow, TypeScript)"
 date: "2017-01-01 18:57"
 listed: true
 published: true
@@ -13,7 +13,11 @@ twitter_description: |
   "Parameterised Types" are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types.
 ---
 
-_This post has been tagged with "Flow", but everything bar the final set of examples translates directly to TypeScript 2+ (with `--strictNullChecks` turned on). Also, this post has been [mirrored to Medium](https://medium.com/@damncabbage/effective-types-parameterised-types-a-friendly-primer-flow-fce991a9a191) because heck why not._
+> This is part of a short series of Flow/TypeScript posts I'm calling "Effective Types". Posts so far:
+>
+> * [Parameterised Types, a Friendly Primer](/blog/2017/01/effective-types-a-parameterised-type-primer-flow/) (Flow, TypeScript)
+> * [Type Wrappers with Flow](/blog/2017/01/effective-types-type-wrappers-with-flow/) (Flow)
+> * Phantom Types (Flow; coming soon)
 
 "Parameterised Types" are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
 

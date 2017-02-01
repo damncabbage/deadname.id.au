@@ -12,6 +12,12 @@ categories:
 - Newtypes
 ---
 
+> This is part of a short series of Flow/TypeScript posts I'm calling "Effective Types". Posts so far:
+>
+> * [Parameterised Types, a Friendly Primer](/blog/2017/01/effective-types-a-parameterised-type-primer-flow/) (Flow, TypeScript)
+> * [Type Wrappers with Flow](/blog/2017/01/effective-types-type-wrappers-with-flow/) (Flow)
+> * Phantom Types (Flow; coming soon)
+
 Type Wrappers are a way of taking an existing type (like strings, numbers, etc) and wrapping them in _another_ type, both so they can't be confused with other things of the same type, and to represent things like validation in a way that Flow can check. They are variously known as Nominal Type Aliases, [Opaque Type Aliases](https://docs.hhvm.com/hack/type-aliases/opaque), or [Newtypes](https://wiki.haskell.org/Newtype)<sup><a href="#note-1">1</a></sup>. Let's get to it. 😊
 
 

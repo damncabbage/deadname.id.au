@@ -345,11 +345,22 @@ I'll leave you now with some examples of Type Wrappers in action. I'm [intereste
 // (This example is pretty similar to Email above.)
 class PositiveNumber extends TypeWrapper<number> {}
 
-function toPositive(n: number): (number | null) {
+function toPositive(n: number): (PositiveNumber | null) {
   if (n >= 0) {
     return PositiveNumber.wrap(n);
   }
   return null;
+}
+
+// Some helper I just made up that can use this:
+function repeat<T>(item: T, times: PositiveNumber): Array<T> {
+  return Array(PositiveNumber.unwrap(times)).fill(item);
+}
+
+const times = toPositive(5);
+if (times !== null) {
+  const fiveNines = repeat(9, times);
+  console.log(fiveNines); // [9,9,9,9,9]
 }
 ```
 

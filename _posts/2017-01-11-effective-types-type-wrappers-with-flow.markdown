@@ -225,7 +225,7 @@ if (email !== null) {
 
 ### "Gatekeeper" Functions
 
-Lets look at `validateEmail` from above
+Lets look at our `validateEmail` again from earlier:
 
 ```ts
 function validateEmail(x: string): (Email | null) {
@@ -233,7 +233,7 @@ function validateEmail(x: string): (Email | null) {
 }
 ```
 
-We have a function that produces `Email`. What if, to make an `Email`, we had to put the input through the `validateEmail` function?
+We have a function that produces `Email`. What if, to make an `Email`, we had to put the input through this `validateEmail` function?
 
 ```ts
 // ----- email.js -----

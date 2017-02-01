@@ -330,7 +330,7 @@ There _is_ overhead, but it's minimal:
 
 * If you're transpiling to ES5 or below, every `class` definition will be converted to its ES5 equivalent. A one-time cost for `class`, plus about seven unminified lines of Babel output per `extends TypeWrapper`.
 * Every time you wrap or unwrap a value, it goes through a function that looks like:  
-  ```ts
+  ```
   function(x) { return x; }
   ```  
   ... Which sounds wasteful, but [in this performance test](https://jsperf.com/damncabbage-x-vs-id-x), the difference [doesn't even seem to clear the margin of error](https://i.imgur.com/2LYwdFG.png).

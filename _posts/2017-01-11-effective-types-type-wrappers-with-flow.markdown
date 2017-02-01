@@ -281,7 +281,7 @@ As we've just done, you can ratchet up the safety, at the expense of restricting
 
 (And what is the performance overhead for this?)
 
-In the case of `Email`: just strings! "Wrapping" the types never transforms them. The idea of `Email` being a separate thing is entirely for Flow's benefit, and pretty much evaporates when the program is run.
+In the case of `Email`: just strings! "Wrapping" the values never transforms them. The idea of `Email` being a separate thing is entirely for Flow's benefit, and pretty much evaporates when the program is run.
 
 Let's look at `TypeWrapper`'s definition:<sup><a href="#note-2">2</a></sup>
 
@@ -304,7 +304,7 @@ export class TypeWrapper<Inner> {
 
 It's a class that, when extended, provides a class with some `static` helper methods. It could be a type and a couple of functions, but this way lets you define a wrapper with an `class Foo extends TypeWrapper<Bar>` one-liner.
 
-If you fill in the type-variable gaps, you could think of it like the following (assuming our earlier `Email`-wrapping`-string example):
+If you fill in the type-variable gaps, you could think of it like the following (assuming our earlier `Email`-wrapping-`string` example):
 
 ```ts
 export class Email {
@@ -313,11 +313,13 @@ export class Email {
   // string -> Email
   static wrap(x: string): Email {
     return (x: any);
+    // ^-- x is forced to "any", then back to "Email" by the return type.
   }
 
   // Email -> string
   static unwrap(x: Email): string {
     return (x: any);
+    // ^-- Same, except to "string".
   }
 }
 ```

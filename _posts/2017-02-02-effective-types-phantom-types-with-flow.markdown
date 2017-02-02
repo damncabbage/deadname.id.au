@@ -123,7 +123,7 @@ convertFtoC(boilingFahr); // <-- Compiles!
 
 ### Validation
 
-(This example was partly drawn from https://wiki.haskell.org/Phantom_type)
+(This example was partly drawn from [https://wiki.haskell.org/Phantom_type](https://wiki.haskell.org/Phantom_type))
 
 Besides the aforementioned Temperature example (which is valid enough in itself), it's also useful for tagging a value as having gone through some process:
 

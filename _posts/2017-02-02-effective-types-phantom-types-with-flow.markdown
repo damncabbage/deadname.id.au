@@ -16,7 +16,7 @@ categories:
 >
 > * [Parameterised Types, a Friendly Primer](/blog/2017/01/effective-types-a-parameterised-type-primer-flow/) (Flow, TypeScript)
 > * [Type Wrappers with Flow](/blog/2017/01/effective-types-type-wrappers-with-flow/) (Flow)
-> * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow.markdown) (Flow)
+> * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow/) (Flow)
 > * Type Design (Flow; coming soonish)
 
 Phantom Types are a way to add extra information to types, eg. to differentiate them, in such a way so that the extra information goes away when type-checking is complete.

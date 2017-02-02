@@ -16,7 +16,7 @@ categories:
 >
 > * [Parameterised Types, a Friendly Primer](/blog/2017/01/effective-types-a-parameterised-type-primer-flow/) (Flow, TypeScript)
 > * [Type Wrappers with Flow](/blog/2017/01/effective-types-type-wrappers-with-flow/) (Flow)
-> * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow.markdown) (Flow)
+> * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow/) (Flow)
 > * Type Design (Flow; coming soonish)
 
 Type Wrappers are a way of taking an existing type (like strings, numbers, etc) and wrapping them in _another_ type. This is so that:

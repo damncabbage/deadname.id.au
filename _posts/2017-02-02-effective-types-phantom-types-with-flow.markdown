@@ -74,22 +74,21 @@ class Temperature<T> {
 class Fahrenheit {}
 class Celsius {}
 
-const boilingFahr: Temperature<Fahrenheit> = new Temperature(212);
-const boilingCels: Temperature<Celsius> = new Temperature(100);
+// Same "Temperature" abstract type; different type parameters:
+const hot: Temperature<Fahrenheit> = new Temperature(100);
+const boiling: Temperature<Celsius> = new Temperature(100);
 
-console.log(
-  boilingFahr.degrees === boilingCels.degrees
-); // => true; the same value.
+console.log(hot.degrees === boiling.degrees); // => true; the same number value.
 
 // But...
 function convertFtoC(t: Temperature<Fahrenheit>): Temperature<Celsius> {
-  return (t.degrees - 32) / 1.8;
+  return new Temperature((t.degrees - 32) / 1.8);
 }
 
-convertFtoC(boilingFahr); // <-- Compiles!
-convertFtoC(boilingCels); // <-- Kaboom! 💥
-                          // Expected a Temperature<Fahrenheit>, but
-                          // got a Temperature<Celsius> instead.
+convertFtoC(hot);     // <-- Compiles!
+convertFtoC(boiling); // <-- Kaboom! 💥
+                      // Expected a Temperature<Fahrenheit>, but
+                      // got a Temperature<Celsius> instead.
 
 ```
 
@@ -113,9 +112,9 @@ function convertFtoC(f: Temperature<Fahrenheit>): Temperature<Celsius> {
   );
 }
 
-const boilingFahr: Temperature<Fahrenheit> = new Temperature(212);
+const hot: Temperature<Fahrenheit> = new Temperature(100);
 
-convertFtoC(boilingFahr); // <-- Compiles!
+convertFtoC(hot); // <-- Compiles!
 ```
 
 
@@ -145,7 +144,7 @@ function createFormEmail(x: string): FormEmail<Unvalidated> {
 }
 
 // Later:
-const email = createFormEmail("alice@example.com"); 
+const email = createFormEmail("alice@example.com");
 const goodEmail = validateEmail(email); // <-- Compiles!
 if (goodEmail) {
   // goodEmail is known to be a FormEmail<Validated> now.

@@ -272,6 +272,8 @@ createUser(email, "canhefixit");
 
 We only export `validateEmail`, `unwrap` and the `Email` type itself. In doing so, make sure that *any* `Email` values being tossed around our app have been passed through the `validateEmail` function; there's no other way to make one without using an `any` backdoor, and we can use [eslint to warn whenever we try to use these](https://www.npmjs.com/package/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-weak-types).
 
+For me personally, this guarantee is important. The more guarantees I have about things when I'm writing code (eg. in this case, any `Email` I have is always a validated value), I find the more focused I can be on a piece of work; the more "local" I can think.
+
 
 ## A Sliding Scale of Safety
 

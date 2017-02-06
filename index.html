@@ -49,6 +49,11 @@ landmark: home
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
+            {% if post.series %}
+              <span class="post-series">
+                (Series: <a href="/series/{{ post.series | slugify }}">{{ post.series }}</a>)
+              </span>
+            {% endif %}
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
           </li>
         {% endif %}

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+  <section>
+    <h1 class="page-heading">{{ page.series }}</h1>
+    <div class="page-blurb">
+      {{ page.description }}
+    </div>
+
+    <ul id="post-list" class="post-list">
+      {% for post in site.categories[page.series] %}
+        {% if post.listed %}
+          <li>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+  </section>
+</div>

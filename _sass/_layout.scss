@@ -188,6 +188,10 @@
     font-size: 28px;
 }
 
+.page-blurb {
+  margin-bottom: $spacing-unit * 1.5;
+}
+
 #posts, #talks, #projects {
     margin-top: $spacing-unit * 1.3;
 }
@@ -201,6 +205,13 @@
     }
     > li {
         margin-bottom: $spacing-unit * 0.7;
+    }
+
+    .post-series {
+      display: block;
+      line-height: 1;
+      margin-top: 6px;
+      color: $grey-color;
     }
 }
 
@@ -239,6 +250,13 @@
     @include media-query($on-laptop) {
         font-size: 36px;
   }
+}
+
+.post .post-series {
+  line-height: 1;
+  margin-bottom: 5px;
+  font-size: $base-font-size * 1.1;
+  color: $grey-color;
 }
 
 .post-content {

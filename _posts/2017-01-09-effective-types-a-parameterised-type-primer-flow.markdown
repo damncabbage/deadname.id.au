@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Effective Types: Parameterised Types, a Friendly Primer (Flow, TypeScript)"
+title: "Parameterised Types, a Friendly Primer (Flow, TypeScript)"
+series: "Effective Types"
 date: "2017-01-01 18:57"
 listed: true
 published: true

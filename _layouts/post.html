@@ -5,6 +5,11 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.series %}
+      <p class="post-series">
+        Series: <a href="/series/{{ page.series | slugify }}">{{ page.series }}</a>
+      </p>
+    {% endif %}
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories %} • Filed under: {{ page.categories | join: ', ' }}{% endif %}</p>
   </header>
 

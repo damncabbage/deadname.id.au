@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Effective Types: Type Wrappers with Flow"
+title: "Type Wrappers with Flow"
+series: "Effective Types"
 date: "2017-01-11 22:07"
 listed: true
 published: true

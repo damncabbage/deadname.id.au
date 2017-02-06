@@ -36,5 +36,8 @@ collections:
     output: true
     permalink: "/talks/:path/" # /talks/2015/02/foo_bar_baz/
 
+  series:
+    output: true
+
   # TODO:
   #projects:

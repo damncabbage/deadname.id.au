@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Effective Types: Phantom Types with Flow"
+title: "Phantom Types with Flow"
+series: "Effective Types"
 date: "2017-02-02 21:46"
 listed: true
 published: true

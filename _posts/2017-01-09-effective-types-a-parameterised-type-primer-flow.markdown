@@ -85,7 +85,7 @@ const isJustNull: Optional<number> = null;
 const gonnaBreak: Optional<number> = "💥"; // Kaboom; doesn't pass Flow's type-check.
 ```
 
-The `X` isn't a special name: it's just what we called the type parameter, just like `x` is what we called the function parameter; it could be `T`, or `Item`, or `Thing` for all we care.
+As above, `X` isn't a special name: it's just what we called the type parameter, just like `x` is what we called the function parameter.
 
 And like function parameters, `X` (for example) refers to **the one type**. A type that is `type Point<T> = { x: T, y: T }` refers to an object with two fields, `x` and `y`, each with a value of the same type (`T`, whatever it is later specialised to).
 
@@ -141,7 +141,7 @@ Take this last example:
 function first<X>(items: Array<X>): Optional<X> {
   if (0 in items) {
     // Add 100 to each array item. But what is the type of item? We don't
-    // know, and/ if we don't know, we can't tell if this is correct,
+    // know, and if we don't know, we can't tell if this is correct,
     // so... Kaboom. 💥
     return items[0] + 100;
   } else {

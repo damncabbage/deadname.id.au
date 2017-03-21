@@ -6,7 +6,7 @@ date: "2016-06-04 12:30"
 comments: true
 listed: true
 categories:
-- Meetup
+- Camp
 - Javascript
 - Testing
 thumbnail_url: "/talks/2016/06/property-based-testing.png"

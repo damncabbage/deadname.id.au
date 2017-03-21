@@ -20,7 +20,7 @@ categories:
 > * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow/) (Flow)
 > * Type Design (Flow; coming soonish)
 
-Phantom Types are a way to add extra information to types, eg. to differentiate them, in such a way so that the extra information goes away when type-checking is complete.
+Phantom Types are a way to add extra information to types, eg. to differentiate them, in such a way so that the extra information goes away when type-checking is complete. They're useful when the underlying value is the same, but you want to differentiate how they're used.
 
 This post relies pretty heavily on understanding [type parameters](/blog/2017/01/effective-types-a-parameterised-type-primer-flow/) and ["type wrappers" / new-types](/blog/2017/01/effective-types-type-wrappers-with-flow/), and I recommend you understand both of those posts before digging in to this one.
 

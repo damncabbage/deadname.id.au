@@ -21,7 +21,7 @@ twitter_description: |
 > * [Phantom Types](/blog/2017/02/effective-types-phantom-types-with-flow/) (Flow)
 > * Type Design (Flow; coming soonish)
 
-"Parameterised Types" are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about.
+"Parameterised Types" are a feature of Flow, TypeScript, and a growing collection of other languages. They're a way to punch holes in a type definition, leaving it to a later user to fill the gaps with specific types. They're a tool for letting you create type definitions that are both generic and reusable, and also as a tool for us to work on functions while excluding details we don't care about. Parameterised Types are sometimes also known as "Generics" (see Java, C#, the Go "Generics" debate, etc).
 
 This is a little hard to relate in a sentence or two, so let's get straight to it. Here's a few type declarations:
 
@@ -205,8 +205,6 @@ type RequestData<Error,Value> =
 // this case) that prevents us from mixing up with other strings.
 class UserID extends TypeWrapper<string> {}
 ```
-
-PS: One last note, on terminology. In case you run into this in future, the concept of having these parameterised types is sometimes called "Generics" (see Java, C#, the Go "Generics" debate, etc), and is *mostly* like something called "Parametricity".<sup>[2](#note-2)</sup>
 
 
 <small id="note-1">1. Flow has an (unfortunate? intentionally designed?) backdoor that lets you figure out what the items are; I've covered this in [another post](/blog/2017/01/flow-and-refined-type-parameters/).</small>

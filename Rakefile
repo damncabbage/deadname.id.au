@@ -6,18 +6,22 @@ task :post do
   slug  = "#{now.strftime("%F")}-#{title.downcase.gsub(/[^\w]+/, '-')}"
   file  = File.join(File.dirname(__FILE__), '_posts', slug + '.markdown')
 
-  File.open(file, "w") do |f|
-    f << <<-EOS.gsub(/^    /, '')
-    ---
-    layout: post
-    title: "#{title}"
-    date: "#{now.strftime("%F %H:%M")}"
-    published: false
-    categories:
-    - Example
-    ---
+  if File.exists? file
+    puts "Exists already."
+  else
+    File.open(file, "w") do |f|
+      f << <<-EOS.gsub(/^      /, '')
+      ---
+      layout: post
+      title: "#{title}"
+      date: "#{now.strftime("%F %H:%M")}"
+      published: false
+      categories:
+      - Example
+      ---
 
-    EOS
+      EOS
+    end
   end
 
   puts "Generated #{file} - opening..."

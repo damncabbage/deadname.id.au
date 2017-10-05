@@ -212,9 +212,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 155)
-  jekyll (~> 3.5)
+  jekyll (~> 3.5.2)
   rake
   rouge (= 1.11.1)
 
 BUNDLED WITH
-   1.15.1
+   1.15.4

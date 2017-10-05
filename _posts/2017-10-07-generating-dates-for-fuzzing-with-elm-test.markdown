@@ -49,10 +49,18 @@ conservativeDate =
 
 ... means you're not going to cover the leap-year date of February 29, or even the 30/31-day months the rest of the year.
 
+You could generate some potentially-failing cases and then [`Fuzz.conditional`](http://package.elm-lang.org/packages/elm-community/elm-test/latest/Fuzz#conditional)-filter the bad ones out, but we're already heading down a bad road. Let's see what else we can do instead.
+
 
 ## Better
 
-Generate a year within the range you care about (eg. 30 years either side of a given year, or up to 50 years in the past):
+Instead we're going to start with a year we care about (we'll pick one later), taking it in as input to a `dateForYear : Int -> Fuzzer Date` fuzzer we can stash in a helper module for later reuse.
+
+`Time.Date` has an [`addDays: Int -> Date -> Date`](package.elm-lang.org/packages/elm-community/elm-time/latest/Time-Date#addDays) function that, when given a date, will let you add (or subtract) an arbitrary number of days to it; with the library handling the transition as you progress through months and years, the date will stay valid the entire time. If we were to pick the start of the year, eg. `date 2017 1 1` for Jan 1st 2017, we could then `addDays` to that.
+
+So using this function, we only need two things now: a generated Int for the year, and a generated Int for the number of days we want. They'll always work together even if generated independently. Solved!
+
+Let's have a look at how we might define some helpers:
 
 ```haskell
 module Test.Helpers.Dates exposing (..)
@@ -74,7 +82,7 @@ dateWithinYearRange lower upper =
     |> Fuzz.andThen (\year -> dateForYear year)
 ```
 
-... Using it like so (silly examples, but showing passing and failing):
+... And how we might use them in some tests. They're silly examples, but show passing and failing cases:
 
 ```haskell
 import Test.Helpers.Dates exposing (dateWithinYearRange)
@@ -95,12 +103,12 @@ suite =
     , fuzz2
         (dateForYear 2017)
         (dateForYear 2017)
-        "Mostly fails"
+        "Fails"
         <| \date1 date2 ->
           date1 |> Expect.equal date2
 
     , fuzz2 (dateNear 2017) (dateNear 2017)
-        "Always fails"
+        "Fails a lot more"
         <| \date1 date2 ->
           date1 |> Expect.equal date2
     ]
@@ -111,10 +119,10 @@ dateNear y =
   dateWithinYearRange (y - 2) (y + 2)
 ```
 
-`Always passes` does what it says on the tin, and `Mostly fails` and `Always fails` progressively shrinks the date integers, while preserving some sensible-looking failure output for debugging:
+`Always passes` does what it says on the tin, and `Fails` and `Fails a lot more` fall over while preserving some sensible-looking failure output for debugging:
 
 ```
-✗ Mostly fails
+✗ Fails
 
 Given (Date { year = 2017, month = 1, day = 2 },Date { year = 2017, month = 1, day = 1 })
 
@@ -134,9 +142,8 @@ Given (Date { year = 2017, month = 1, day = 1 },Date { year = 2017, month = 1, d
     Date { year = 2017, month = 1, day = 2 }
 
 
-↓ Example2
 ↓ Random Dates
-✗ Always fails
+✗ Fails a lot more
 
 Given (Date { year = 2019, month = 1, day = 1 },Date { year = 2019, month = 1, day = 2 })
 
@@ -147,6 +154,32 @@ Given (Date { year = 2019, month = 1, day = 1 },Date { year = 2019, month = 1, d
     Date { year = 2019, month = 1, day = 2 }
 
 ...
+```
+
+# Extras
+
+If you want to make sure you hit the leap years, you can either test them separately, or use the [`Fuzz.frequency`](http://package.elm-lang.org/packages/elm-community/elm-test/latest/Fuzz#frequency) function to make sure they show up sometimes whenever you reach for the date generator:
+
+```haskell
+module Test.Helpers.Dates exposing (..)
+
+import Time.Date exposing (Date, date, isLeapYear)
+import Fuzz exposing (Fuzzer, constant, frequency)
+import List
+
+dateNear : Int -> Fuzzer Date
+dateNear year =
+  let
+    knownLeap = 2016
+    nearestLeap =
+      List.range -2 2
+        |> List.map (\n -> year + n)
+        |> List.foldl (\y rest -> if isLeapYear y then y else rest) knownLeap
+  in
+    Fuzz.frequency
+      [ (1, constant (date nearestLeap 2 29))          -- chosen 25% of the time
+      , (3, dateWithinYearRange (year - 2) (year + 2)) -- chosen 75% of the time
+      ]
 ```
 
 

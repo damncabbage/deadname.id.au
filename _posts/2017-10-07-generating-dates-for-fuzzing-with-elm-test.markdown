@@ -19,7 +19,7 @@ Generating dates are something that I've found to be a bit of a pain. For the ex
 
 Generating the individual parts (year, month, day) with a bunch of `Int`s, eg.
 
-```elm
+```haskell
 import Time.Date exposing (Date, date)
 import Fuzz exposing (Fuzzer, int)
 
@@ -38,7 +38,7 @@ sillyDate =
 
 And coming up with "sensible" numbers, eg.
 
-```elm
+```haskell
 conservativeDate : Fuzzer Date
 conservativeDate =
   Fuzz.map3 (\y m d -> date y m d)
@@ -54,7 +54,7 @@ conservativeDate =
 
 Generate a year within the range you care about (eg. 30 years either side of a given year, or up to 50 years in the past):
 
-```elm
+```haskell
 module Test.Helpers.Dates exposing (..)
 
 import Time.Date exposing (Date, date, addDays, isLeapYear)
@@ -76,7 +76,7 @@ dateWithinYearRange lower upper =
 
 ... Using it like so (silly examples, but showing passing and failing):
 
-```elm
+```haskell
 import Test.Helpers.Dates exposing (dateWithinYearRange)
 import Date.Extra.Facts
 
@@ -154,7 +154,8 @@ Given (Date { year = 2019, month = 1, day = 1 },Date { year = 2019, month = 1, d
 ## Final Words of Warning
 
 1) The `Date` type that the `elm-community/elm-time` library exports is a _different_ one to the one that the core `Date` module exposes, but the latter [appears to be going away](https://github.com/elm-lang/core/commit/a892fdf705f83523752c5469384e9880fbdfe3b1#diff-25d902c24283ab8cfbac54dfa101ad31). You may need to convert between the two, so just in case you do:  
-```elm
+
+```haskell
 import Time.Date as Time
 import Date as Core
 

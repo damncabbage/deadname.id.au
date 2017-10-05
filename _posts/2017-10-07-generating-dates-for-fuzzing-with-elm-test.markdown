@@ -12,7 +12,7 @@ categories:
 
 Elm, with its [elm-test](https://github.com/elm-community/elm-test) library, allows for a [property-based style of testing](/talks/2016/06/property-based-testing) with its [Fuzz](package.elm-lang.org/packages/elm-community/elm-test/latest/Fuzz) test runner and suite of helpers.
 
-Generating dates are something that I've found to be a bit of a pain. For the examples below I'll be using the [elm-community/elm-time](https://github.com/elm-community/elm-time) library.
+Generating dates is something that I've found to be a bit of a pain. For the examples below I'll be using the [elm-community/elm-time](https://github.com/elm-community/elm-time) library.
 
 
 ## Broken

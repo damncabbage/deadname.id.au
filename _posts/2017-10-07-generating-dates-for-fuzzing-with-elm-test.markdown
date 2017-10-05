@@ -156,7 +156,7 @@ Given (Date { year = 2019, month = 1, day = 1 },Date { year = 2019, month = 1, d
 ...
 ```
 
-# Extras
+### Extras
 
 If you want to make sure you hit the leap years, you can either test them separately, or use the [`Fuzz.frequency`](http://package.elm-lang.org/packages/elm-community/elm-test/latest/Fuzz#frequency) function to make sure they show up sometimes whenever you reach for the date generator:
 

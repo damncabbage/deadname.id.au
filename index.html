@@ -8,41 +8,41 @@ landmark: home
   <p>Hi! I'm Rob Howard. I <a href="https://github.com/damncabbage">mess around</a> with Haskell, JavaScript, Elixir, PureScript and Ruby, and sometimes like to <a href="#posts">scribble things down</a> and <a href="/speaking/">talk at people</a>. I get paid to write code and run up hosting bills.</p>
 
   {% if site.talks %}
-  <section id="talks">
-    <h1 class="page-heading">Talks</h1>
-    <ul id="post-list" class="post-list">
-      {% for post in site.talks reversed %}
-        {% if post.listed %}
-          <li>
-            <h2>
-              <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>
-            </h2>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </section>
+    <section id="talks" class="home-section">
+      <h1 class="page-heading">Talks</h1>
+      <ul class="post-list">
+        {% for post in site.talks reversed %}
+          {% if post.listed %}
+            <li>
+              <h2>
+                <a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.venue %} ({{ post.venue }}){% endif %}</a>
+              </h2>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories %} • Filed under: {{ post.categories | join: ', ' }}{% endif %}</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
   {% if site.projects %}
-  <section id="projects">
-    <h1 class="page-heading">Projects</h1>
-    <ul id="post-list" class="post-list">
-      {% for post in site.projects %}
-        <li>
-          <h2>
-            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section id="projects" class="home-section">
+      <h1 class="page-heading">Projects</h1>
+      <ul class="post-list">
+        {% for post in site.projects %}
+          <li>
+            <h2>
+              <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
-  <section id="posts">
+  <section id="posts" class="home-section">
     <h1 class="page-heading">Posts</h1>
-    <ul id="post-list" class="post-list">
+    <ul class="post-list">
       {% for post in site.posts %}
         {% if post.listed %}
           <li>

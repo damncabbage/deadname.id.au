@@ -21,3 +21,12 @@ excerpt: |
 </a>
 
 > A quick tour through some ways we can make our types work harder for us, to prevent unwanted nasties creeping in. We'll cover 'shrinking' our types to better fit our problems, how to avoid repeating yourself, and some TypeScript quirks to avoid.
+
+References:
+* https://michalzalecki.com/nominal-typing-in-typescript/
+* https://www.typescriptlang.org/docs/handbook/utility-types.html
+* https://dev.to/busypeoples/notes-on-typescript-pick-exclude-and-higher-order-components-40cp
+* https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c
+* https://mariusschulz.com/blog/typescript-3-0-the-unknown-type
+* https://gcanti.github.io/io-ts/
+* https://basarat.gitbooks.io/typescript/

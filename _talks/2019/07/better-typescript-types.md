@@ -7,7 +7,7 @@ listed: true
 published: true
 categories:
 - JavaScript
-- TypeSxcript
+- TypeScript
 - Type Safety
 thumbnail_url: "/talks/2019/07/better-typescript-types.png"
 twitter_card: "summary"

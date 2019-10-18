@@ -15,6 +15,8 @@ excerpt: |
   A quick tour through some ways we can make our types work harder for us, to prevent unwanted nasties creeping in. We'll cover 'shrinking' our types to better fit our problems, how to avoid repeating yourself, and some TypeScript quirks to avoid.
 ---
 
+**Note:** This talk has since been reworked, and later given at [CampJS and SydJS](/talks/2019/10/better-typescript-types).
+
 <a class="pdf" href="/talks/2019/07/better-typescript-types.pdf">
   <img src="/talks/2019/07/better-typescript-types.png" />
   <span>Talk Slides PDF (1.6MB)</span>

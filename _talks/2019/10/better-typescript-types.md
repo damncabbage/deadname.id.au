@@ -15,10 +15,12 @@ excerpt: |
   A quick tour through some ways we can make our types work harder for us, to prevent unwanted nasties creeping in. We'll cover 'shrinking' our types to better fit our problems, how to avoid repeating yourself, some TypeScript quirks to avoid, and we'll try thinking about some TypeScript fundamentals in a different way.
 ---
 
-<a class="pdf" href="/talks/2019/10/better-typescript-types.pdf">
-  <img src="/talks/2019/10/better-typescript-types.png" />
-  <span>Talk Slides PDF (1.6MB)</span>
-</a>
+<div class="pdf">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PZVzCwbMP8o" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href="/talks/2019/10/better-typescript-types.pdf">
+    <span>Talk Slides PDF (8.5MB)</span>
+  </a>
+</div>
 
 > A quick tour through some ways we can make our types work harder for us, to prevent unwanted nasties creeping in. We'll cover 'shrinking' our types to better fit our problems, how to avoid repeating yourself, some TypeScript quirks to avoid, and we'll try thinking about some TypeScript fundamentals in a different way.
 

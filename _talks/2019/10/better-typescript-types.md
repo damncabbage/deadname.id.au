@@ -24,6 +24,8 @@ excerpt: |
 
 > A quick tour through some ways we can make our types work harder for us, to prevent unwanted nasties creeping in. We'll cover 'shrinking' our types to better fit our problems, how to avoid repeating yourself, some TypeScript quirks to avoid, and we'll try thinking about some TypeScript fundamentals in a different way.
 
+Delivered at [RubyConf AU 2020](https://www.rubyconf.org.au/2020/speakers).
+
 References:
 * [https://kentcdodds.com/blog/make-impossible-states-impossible](https://kentcdodds.com/blog/make-impossible-states-impossible)
 * [https://www.typescriptlang.org/docs/handbook/advanced-types.html#exhaustiveness-checking](https://www.typescriptlang.org/docs/handbook/advanced-types.html#exhaustiveness-checking)

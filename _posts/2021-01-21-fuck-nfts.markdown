@@ -13,3 +13,5 @@ categories:
 ---
 
 I said what I said.
+
+<small>(With credit to <a href="https://twitter.com/eevee/status/1484258337281626114">@eevee</a> for the quote, and <a href="https://twitter.com/Pr0mptCr1t1cal/status/1484384876224651266">@Pr0mptCr1t1cal</a> for the inspiration to write it up.)</small>

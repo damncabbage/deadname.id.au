@@ -12,8 +12,10 @@ permalink: "/blog/:year/:month/:title/" # Compatibility with previous Jekyll 0.x
 
 future: true # include content marked with a date in the future
 
-twitter_username: "damncabbage"
+twitter_username: "buzzyrobin"
 github_username:  "damncabbage"
+mastodon_domain: "chaos.social"
+mastodon_username: "buzzyrobin"
 speakerdeck_username: "damncabbage"
 
 # Build settings

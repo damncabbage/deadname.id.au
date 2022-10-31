@@ -4,10 +4,10 @@ author: "Robin Howard"
 email: "robin@rhoward.id.au"
 
 description: >
-  Blog and portfolio nexus for Rob Howard, esteemed Haskell/JavaScript/PureScript-using programmer nitwit.
+  Blog and portfolio nexus for Robin Howard, esteemed TypeScript/Ruby/Haskell/Rust-using programmer nitwit.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://robhoward.id.au" # the base hostname & protocol for your site
+url: "http://rhoward.id.au" # the base hostname & protocol for your site
 permalink: "/blog/:year/:month/:title/" # Compatibility with previous Jekyll 0.x site
 
 future: true # include content marked with a date in the future
